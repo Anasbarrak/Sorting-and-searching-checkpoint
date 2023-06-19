@@ -1,0 +1,16 @@
+ALGORITHM Insertion_sort(arr : ARRAY_OF INTEGER[][];)
+VAR
+    i, j: INTEGER;
+
+BEGIN
+// We have to set i-1 <= j to have a sorted sequence  
+    FOR i FROM 1 TO arr.length-1 STEP 1  DO
+        j = i-1 
+    
+    WHILE (j>= 0 and arr[j > arr[i]]) DO
+        arr[j+1] = arr[j]
+        j = j - 1
+    END_WHILE
+    arr[j+1] = arr[i]
+    END_FOR
+END
